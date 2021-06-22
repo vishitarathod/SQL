@@ -1,0 +1,12 @@
+//To disable auto_commit
+
+SET autocommit=0 ;
+OR
+SET autocommit=OFF;
+
+
+// To enable auto_commit
+
+SET autocommit=1;
+OR
+SET autocommit=ON;
