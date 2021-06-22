@@ -10,3 +10,29 @@ SET autocommit=OFF;
 SET autocommit=1;
 OR
 SET autocommit=ON;
+
+//create table 
+
+CREATE TABLE `person` (
+  `id` int NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `percentage` int NOT NULL,
+  `age` int NOT NULL,
+  `gender` varchar(45) NOT NULL,
+  `city` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+
+//insert in table
+
+insert into person values(1,'vishi',80,21,'F','rajkot');
+
+
+//transaction 
+
+START TRANSACTION; 
+
+insert into person values(2,'jay',90,16,'M','surat');
+
+ROLLBACK;
